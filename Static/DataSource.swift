@@ -102,8 +102,8 @@ public class DataSource: NSObject {
     }
 
     private func refresh(oldSections: [Section] = []) {
-        refreshTableSections(oldSections: oldSections)
         refreshRegisteredCells()
+        refreshTableSections(oldSections: oldSections)
     }
 
     fileprivate func section(at index: Int) -> Section? {
